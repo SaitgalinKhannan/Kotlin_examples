@@ -38,7 +38,7 @@ fun main() {
     val originalText = "I don't know... what to say..."
     val textWithoutDots = originalText.filter({ c: Char -> c != '.' }) //lambda
     
-    It works! First of all, Kotlin infers types of many objects, and here specifying the c type isn't necessary:
+    //It works! First of all, Kotlin infers types of many objects, and here specifying the c type isn't necessary:
 
     /*originalText.filter({ c -> c != '.' })
     Second, there are situations when the lambda is passed as the last argument. This is the case. Kotlin provides a way to eliminate these bracket sequences ({ }), allowing to write the lambda outside the parentheses:
