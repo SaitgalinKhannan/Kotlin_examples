@@ -34,5 +34,8 @@ fun main() {
 
     val originalText = "I don't know... what to say..." // 3.0
     val textWithoutDots = originalText.filter(::isNotDot)
+    
+    val originalText = "I don't know... what to say..."
+    val textWithoutDots = originalText.filter({ c: Char -> c != '.' }) //lambda
 
 }
