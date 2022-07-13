@@ -13,9 +13,9 @@ fun main() {
 
     println(lambda(1, 5))
     
-    
-    
-    
+    //*****************************************************************************************************************************************************************
+        
+    fun isNotDot(c: Char): Boolean = c != '.'
     
     val originalText = "I don't know... what to say..."
     val textWithoutDots = originalText.filter(::isNotDot)
@@ -31,7 +31,7 @@ fun main() {
     If the parentheses are left empty after this operation, you can remove them:
     originalText.filter { c -> c != '.' }
     Finally, when there is a single parameter in a lambda, there is an opportunity to skip it. The parameter is available under the it name. The final version of the code that removes dots is this:*/
-
+       
     val originalText = "I don't know... what to say..."
     val textWithoutDots = originalText.filter { it != '.' }
     
